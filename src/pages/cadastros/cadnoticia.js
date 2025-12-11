@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button, Form, Container, Row, Col, Modal } from 'react-bootstrap';
 
@@ -18,7 +17,7 @@ export default function Postnoticia() {
             tiponoticia
         };
         try {
-            const response = await fetch("https://apinoticias6b-d31rwxmpk-becos-projects-764a2bd7.vercel.app/postnoticias", {
+            const response = await fetch("https://apinoticias6b.vercel.app/postnoticias", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
