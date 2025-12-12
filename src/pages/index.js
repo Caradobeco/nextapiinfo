@@ -28,3 +28,4 @@ export default function Home({ noticias }) {
     </>
   );
 }
+// src/pages/index.js

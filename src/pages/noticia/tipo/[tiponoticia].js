@@ -7,7 +7,7 @@ export async function getServerSideProps(req) {
       req.query.tiponoticia
   );
   const repo = await res.json();
-  // Pass data to the page via props ola
+  // Pass data to the page via props
   return { props: { noticias: repo } };
 }
 export default function Page({ noticias }) {
