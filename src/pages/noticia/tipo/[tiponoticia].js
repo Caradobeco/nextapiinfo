@@ -3,7 +3,7 @@ import Cards from "../../components/cards";
 export async function getServerSideProps(req) {
   // Fetch data from  API notícias
   const res = await fetch(
-    "apinoticias6b-eight.vercel.app/noticias/tiponoticia/" +
+    "https://apinoticias6b-eight.vercel.app/noticias/tiponoticia/" +
       req.query.tiponoticia
   );
   const repo = await res.json();

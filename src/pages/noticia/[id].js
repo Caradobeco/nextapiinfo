@@ -3,7 +3,7 @@ import Cards from "../components/cards";
 export async function getServerSideProps(req) {
   // Fetch data from  API notícias
   const res = await fetch(
-    "apinoticias6b-eight.vercel.app/noticias/id/" + req.query.id
+    "https://apinoticias6b-eight.vercel.app/noticias/id/" + req.query.id
   );
   const repo = await res.json();
   // Pass data to the page via props
